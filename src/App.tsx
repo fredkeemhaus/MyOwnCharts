@@ -63,6 +63,11 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     color: inherit;
   }
+
+  button {
+    background-color: none;
+    border: none;
+  }
 `;
 
 function App() {
