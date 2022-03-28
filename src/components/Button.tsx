@@ -18,6 +18,7 @@ const DataControlButton = styled.div<{ position?: string }>`
     background-color: ${POINT_COLOR};
     padding: 8px 24px;
     font-size: 0.8em;
+    font-weight: 600;
   }
 `;
 

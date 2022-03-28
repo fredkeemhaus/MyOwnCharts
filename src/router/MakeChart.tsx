@@ -4,8 +4,10 @@ import ControlButton from "../components/Button";
 const Wrap = styled.div`
   display: flex;
   flex-direction: column;
-  margin auto;
   width: 100%;
+  height: 90vh;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 const Container = styled.div`
@@ -13,17 +15,20 @@ const Container = styled.div`
   max-width: 1400px;
   padding: 40px 20px;
   margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 const TopSection = styled.div`
   box-sizing: border-box;
-  margin: auto;
-  margin-bottom: 30px;
   width: 100%;
   max-width: 700px;
-
+  margin-right: 150px;
   h1 {
     font-size: 2.2em;
+    font-weight: 600;
+    line-height: 1.3em;
   }
 
   div {
@@ -31,7 +36,9 @@ const TopSection = styled.div`
 
     h3 {
       font-size: 1.2em;
+      line-height: 1.3em;
       margin-top: 30px;
+      color: rgb(107, 118, 132);
     }
   }
 `;
@@ -39,9 +46,7 @@ const TopSection = styled.div`
 const BottomSection = styled.div`
   box-sizing: border-box;
   margin: auto;
-  margin-bottom: 10px;
   width: 100%;
-  max-width: 700px;
 `;
 
 const PasteDataContainer = styled.div`
@@ -51,7 +56,7 @@ const PasteDataContainer = styled.div`
   p {
     margin-bottom: 10px;
     span {
-      font-size: 0.8em;
+      font-size: 1.2em;
     }
   }
 
@@ -61,8 +66,9 @@ const PasteDataContainer = styled.div`
     textarea {
       font-size: 0.8em;
       height: 490px;
-      width: 700px;
+      width: 500px;
       padding: 10px;
+      margin-bottom: 20px;
     }
   }
 `;
@@ -73,10 +79,17 @@ const MakeChart = () => {
       <Wrap>
         <Container>
           <TopSection>
-            <h1>Welcome to Pivot Charts</h1>
+            <h1>
+              피벗 차트에 오신 것을 <br />
+              환영합니다!
+            </h1>
             <div>
               <p>
-                <h3>Copy &amp; paste your data below</h3>
+                <h3>
+                  여러분의 데이터를
+                  <br />
+                  오른쪽에 복사/붙여넣기 해주세요.
+                </h3>
               </p>
             </div>
           </TopSection>
@@ -93,8 +106,8 @@ const MakeChart = () => {
                 />
               </div>
             </PasteDataContainer>
+            <ControlButton position={"flex-end"} name={"차트 생성하기"} />
           </BottomSection>
-          <ControlButton position={"flex-end"} name={"차트 생성하기"} />
         </Container>
       </Wrap>
     </div>
