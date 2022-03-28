@@ -5,6 +5,7 @@ interface ButtonProps {
   position?: string;
   bgColor?: string;
   name: string;
+  submit: any;
 }
 
 const DataControlButton = styled.div<{ position?: string }>`
@@ -22,10 +23,10 @@ const DataControlButton = styled.div<{ position?: string }>`
   }
 `;
 
-const ControlButton = ({ position, name }: ButtonProps) => {
+const ControlButton = ({ position, name, submit }: ButtonProps) => {
   return (
     <DataControlButton position={position}>
-      <button>{name}</button>
+      <button onClick={submit}>{name}</button>
     </DataControlButton>
   );
 };

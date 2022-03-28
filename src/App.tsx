@@ -56,7 +56,10 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: /* 본문용 서체 */
+  '-apple-system', 'BlinkMacSystemFont', 'Apple SD Gothic Neo',
+  'Inter', 'Spoqa Han Sans', 'Segoe UI', Sans-Serif,
+  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   }
 
   a {
@@ -69,10 +72,7 @@ const GlobalStyle = createGlobalStyle`
     border: none;
   }
 
-  font-family: /* 본문용 서체 */
-  '-apple-system', 'BlinkMacSystemFont', 'Apple SD Gothic Neo',
-  'Inter', 'Spoqa Han Sans', 'Segoe UI', Sans-Serif,
-  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  
 `;
 
 function App() {
