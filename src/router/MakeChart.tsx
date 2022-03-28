@@ -96,7 +96,8 @@ const MakeChart = () => {
           <BottomSection>
             <PasteDataContainer>
               <p>
-                <span>Please add your data in CSV or TSV format</span>
+                <span>당신의 데이터를 추가해주세요 (CSV / TSV format)</span>
+                {/* <span>Please add your data in CSV or TSV format</span> */}
               </p>
               <div>
                 <textarea
